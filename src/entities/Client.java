@@ -1,11 +1,10 @@
 package entities;
 
 public class Client {
-	private String name, cpf;
+	private String name;
 	
-	public Client(String name, String cpf) {
+	public Client(String name) {
 		this.name = name;
-		this.cpf = cpf;
 	}
 
 	public String getName() {
@@ -13,9 +12,5 @@ public class Client {
 	}
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public String getCpf() {
-		return cpf;
 	}
 }
