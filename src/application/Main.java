@@ -32,9 +32,9 @@ public class Main {
 		Financing itau = new Financing(amount, installments, new Itau());
 		
 		System.out.println("Options according to banks");
-		System.out.println("Caixa: " + installments + " payments of R$ " + caixa.getMonthPay() + ", making a total of R$ " + caixa.getTotal());
-		System.out.println("Banco do Brasil: " + installments + " payments of R$ " + bb.getMonthPay() + ", making a total of R$ " + bb.getTotal());
-		System.out.println("Itaú: " + installments + " payments of R$ " + itau.getMonthPay() + ", making a total of R$ " + itau.getTotal());
+		System.out.println("Caixa: " + installments + " payments of R$ " + String.format("%.2f", caixa.getMonthPay()) + ", making a total of R$ " + String.format("%.2f", caixa.getTotal()));
+		System.out.println("Banco do Brasil: " + installments + " payments of R$ " + String.format("%.2f", bb.getMonthPay()) + ", making a total of R$ " + String.format("%.2f", bb.getTotal()));
+		System.out.println("Itaú: " + installments + " payments of R$ " + String.format("%.2f", itau.getMonthPay()) + ", making a total of R$ " + String.format("%.2f", itau.getTotal()));
 		
 		scan.close();
 	}
